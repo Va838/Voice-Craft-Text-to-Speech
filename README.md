@@ -34,9 +34,7 @@ This project is a **serverless web application** that converts user-submitted te
 
 ---
 
-## ⚙️ Usage Instructions
-
-### 1️⃣ Backend Deployment
+### Backend Deployment
 
 Deploy the following AWS resources manually or using tools like SAM / Terraform:
 
@@ -48,6 +46,32 @@ Deploy the following AWS resources manually or using tools like SAM / Terraform:
   - `add_new_posts.py`
   - `convert_text_to_audio.py`
   - `read_table_items.py`
+
+📁 File Structure
+
+project-root/
+│
+├── Voice Craft/
+│   ├── index.html
+│   ├── styles.css
+│   ├── scripts.js
+│   └── error.html
+│
+├── add_new_posts.py             # Lambda function: handle new submissions
+├── convert_text_to_audio.py     # Lambda function: convert text to speech
+├── read_table_items.py          # Lambda function: fetch all items
+├── arc_diagram                  # Architecture image (optional)
+└── README.md                    # Project documentation
+
+
+📌 Important Points
+All AWS resources should be created in the us-east-1 region.
+
+This app is intended for educational and demonstration purposes.
+
+Be mindful of Amazon Polly quotas and costs during heavy usage.
+
+
 
 
 
