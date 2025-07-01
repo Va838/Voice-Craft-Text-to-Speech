@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif; /* A more modern, clean font */
+    background-color: #f4f7f6; /* Light gray background for the whole page */
+    color: #333; /* Darker text for better readability */
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #004C99; /* Matching the button color */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.buttons {
+    border: solid 1px #0066cc; /* Slightly softer border */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 20px; /* Increased padding for a larger touch target */
+    background-color: #004C99;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.buttons:hover {
+    color: #004C99; /* Darker text on hover */
+    background-color: #e0f2f7; /* Lighter blue for hover */
+    border-color: #004C99;
+}
+
+.buttons:active {
+    position: relative;
+    top: 1px;
+}
+
+#newPost {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#charCounter {
+    float: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    height: 10em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#content {
+    width: 80%; /* Slightly narrower for better focus */
+    max-width: 900px; /* Maximum width for large screens */
+    margin: 20px auto; /* Centered with more vertical margin */
+    padding: 30px; /* Increased padding */
+    background-color: #ffffff; /* White background for the content area */
+    border-radius: 10px; /* Rounded corners for the content box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Verdana', sans-serif;
+    word-spacing: 2pt; /* Slightly reduced word spacing */
+    font-size: 1em;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+#voiceSelected {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#posts {
+    font-weight: normal;
+    color: #333;
+    word-spacing: 2pt;
+    font-size: 0.9em;
+    text-align: left;
+    font-family: 'Verdana', sans-serif;
+    width: 80%; /* Consistent with content width */
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse; /* Collapse borders for a cleaner table look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Shadow for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+#posts th {
+    background-color: #004C99; /* Darker blue for headers */
+    color: white;
+    padding: 12px 8px; /* Increased padding for headers */
+    border-bottom: 1px solid #003366; /* Darker border for headers */
+    text-align: left;
+    font-weight: bold;
+}
+
+#posts td {
+    padding: 10px 8px; /* Slightly increased padding for cells */
+    border-color: #eee; /* Lighter border for cells */
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+#posts tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for readability */
+}
+
+#posts tbody tr:hover {
+    background-color: #eef; /* Highlight row on hover */
+}
+
+#postIDreturned {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #007BFF; /* A distinct color for messages */
+}
+
+audio {
+    width: 100%; /* Make audio player fill its column */
+    max-width: 250px; /* Prevent it from getting too wide */
+}
