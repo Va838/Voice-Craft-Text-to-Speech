@@ -47,11 +47,12 @@ Deploy the following AWS resources manually or using tools like SAM / Terraform:
   - `convert_text_to_audio.py`
   - `read_table_items.py`
 
-📁 File Structure
+## 📁 File Structure
 
+```
 project-root/
 │
-├── Voice Craft/
+├── serverless-web/
 │   ├── index.html
 │   ├── styles.css
 │   ├── scripts.js
@@ -62,14 +63,15 @@ project-root/
 ├── read_table_items.py          # Lambda function: fetch all items
 ├── arc_diagram                  # Architecture image (optional)
 └── README.md                    # Project documentation
+```
 
+---
 
-📌 Important Points
-All AWS resources should be created in the us-east-1 region.
+## 📌 Important Points
 
-This app is intended for educational and demonstration purposes.
-
-Be mindful of Amazon Polly quotas and costs during heavy usage.
+- All AWS resources should be created in the **us-east-1** region.
+- This app is intended for educational and demonstration purposes.
+- Be mindful of **Amazon Polly quotas and costs** during heavy usage.
 
 
 
