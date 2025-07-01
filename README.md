@@ -52,7 +52,7 @@ Deploy the following AWS resources manually or using tools like SAM / Terraform:
 ```
 project-root/
 │
-├── serverless-web/
+├── Voice Craft/
 │   ├── index.html
 │   ├── styles.css
 │   ├── scripts.js
